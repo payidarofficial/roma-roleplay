@@ -88,6 +88,23 @@ hr{
     text-align: center;
 }
 
+/* Responsive */
+@media screen and (max-width: 800px) {
+    body{
+        margin: 15px;
+    }
+    .box{
+        width: auto;
+    }
+    .box .orta-bolme{
+        padding-left: 10px;
+        flex-direction: column;
+    }
+    .box .footer{
+        padding: 10px 10px 5px 10px;
+    }
+}
+
 /* Dark Mode */
 .dark_mode{
     background-color: #111;
