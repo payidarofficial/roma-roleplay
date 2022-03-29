@@ -1,0 +1,72 @@
+<!-- Pâyidar Code -->
+
+<html>
+    <head>
+        <title>Pâyidar Code</title>
+
+        <!-- Meta -->
+        <meta name="title" content="Roma Roleplay">
+        <meta name="description" content="Roma Roleplay Web Site">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index,nofollow">
+
+        <!-- Link -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <!-- Script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <canvas class="background"></canvas>
+
+        <div class="box">
+            <div class="yukari-bolme">
+                <div>
+                    <span>Roma Roleplay</span>
+                </div>
+                <div>
+                    <i onclick="darkmode_payidar()" class="bi bi-moon-fill"></i>
+                </div>
+            </div>
+            <hr/>
+            <div class="orta-bolme">
+                <div>
+                    <p>Sunucu Durumu: <span>Aktif <i class="bi bi-circle-fill"></i></span></p>
+                </div>
+                <div>
+                    <p>Server İp: <span style="user-select: all;">217.195.197.84</span></p>
+                </div>
+                <div>
+                    <p>Discord: <span><a href="https://discord.gg/cPBFbZkrxk" target="_blank">Tıkla</a></span></p>
+                </div>
+            </div>
+            <hr/>
+            <div class="alt-bolme">
+                <div>
+                    <a href="https://www.instagram.com/xquart_yt/" target="_blank"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <hr/>
+            <p class="footer">Kalite Asla Tesadüf Değildir. &copy; 2022 - By <a href="https://payidar-code.blogspot.com" style="text-decoration: none; color: red;">Pâyidar</a></p>
+        </div>
+
+        <!-- Script -->
+        <script>
+            window.onload = function() {
+                Particles.init({
+                    selector: '.background',
+                    color: "#fff",
+                    connectParticles: false
+                });
+            };
+        </script>
+        <script>
+            function darkmode_payidar(){
+                var payidar = document.body;
+                payidar.classList.toggle('dark_mode')
+            }
+        </script>
+    </body>
+    <script src="js/particle.js"></script>
+</html>

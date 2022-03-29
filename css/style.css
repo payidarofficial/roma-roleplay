@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+body{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: 250ms all;
+}
+*{
+    box-sizing: border-box;
+}
+::selection{
+    background: #404040;
+    color: #fff;
+}
+
+/* Element */
+hr{
+    background: #bfbfbf;
+    height: 1;
+    opacity: .2;
+    border: none;
+}
+
+.background{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Box */
+.box{
+    font-weight: bold;
+    background-color: #fcfcfc;
+    border-radius: 5px 10px;
+    width: 600px;
+    color: black;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, .2);
+}
+.box .yukari-bolme{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 5px 10px;
+    align-items: center;
+}
+.box .yukari-bolme i{
+    cursor: pointer;
+}
+.box .orta-bolme{
+    display: flex;
+    justify-content: space-around;
+}
+.box .orta-bolme p{
+    display: inline-block;
+}
+.box .orta-bolme span, a{
+    text-decoration: none;
+    color: #16db75;
+    user-select: none;
+}
+.box .orta-bolme i{
+    font-size: 12px;
+    vertical-align: baseline;
+}
+.box .alt-bolme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .alt-bolme a{
+    transition: 250ms all;
+    padding: 5px;
+    color: #1a1a1a;
+    font-size: x-large;
+    border-radius: 50%;
+}
+.box .alt-bolme a:hover{
+    color: gray;
+}
+
+.box .footer{
+    color: rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+/* Dark Mode */
+.dark_mode{
+    background-color: #111;
+}
+.dark_mode .box{
+    background-color: #1a1a1a;
+    color: white;
+}
+.dark_mode .box .footer{
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+.dark_mode .box .alt-bolme a{
+    color: white;
+}
+.dark_mode .box .alt-bolme a:hover{
+    color: gray;
+}
